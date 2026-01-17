@@ -6,8 +6,19 @@ import astroFit from "../assets/img-projects/Astrofit.jpg";
 import Verbenas from "../assets/img-projects/challenge-newyze.png";
 import ReactEcommerce from "../assets/img-projects/ecommers.jpg";
 import PortfolioDev from "../assets/img-projects/PortfolioDev.jpg";
+import VintageTone from "../assets/img-projects/vintageToneApp.jpg";
 
 export const proyectos = [
+  {
+    titulo: "Vintage Tone",
+    descripcion:
+      "Comercio electrónico completo con carrito de compras, autenticación de usuarios jwt, panel de Admin, Blog, y mas. Stack: Vue.Js - Node.js - Express - MongoDB - Tailwind - Cloudinary.",
+    imagen: VintageTone.src,
+    tecnologias: ["Vue.js", "Tailwind", "Express", "MongoDB"],
+    demo: "https://vintage-tone-front-vue.vercel.app",
+    codigo: "https://github.com/Lautaro-R-collins/VintageTone-Front-Vue.git",
+    categoria: "fullstack",
+  },
   {
     titulo: "React Tiendita",
     descripcion:
@@ -119,8 +130,18 @@ export const proyectos = [
       "API RESTful construida con Node.js, Express y MongoDB para gestionar tareas con operaciones CRUD, Registro de usuarios y login con JWT.",
     imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
     tecnologias: ["Express", "Node.js", "MongoDB", "Mongoose"],
-    demo: "https://react-e-commerce-three-phi.vercel.app/",
+    demo: "https://react-e-commerce-three-phi.vercel.app",
     codigo: "https://github.com/Lautaro-R-collins/ApiRest-Ecommerce.git",
+    categoria: "backend",
+  },
+    {
+    titulo: "API REST Vintage Tone App",
+    descripcion:
+      "API RESTful construida con Node.js, Express y MongoDB para gestionar tareas con operaciones CRUD, Registro de usuarios y login con JWT.",
+    imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
+    tecnologias: ["Express", "Node.js", "MongoDB", "Cloudinary"],
+    demo: "https://vintage-tone-front-vue.vercel.app",
+    codigo: "https://github.com/Lautaro-R-collins/VintageTone-API-REST.git",
     categoria: "backend",
   },
   {
