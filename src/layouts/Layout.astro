@@ -2,6 +2,14 @@
 import "../styles/global.css";
 import Navbar from "../components/commons/navbar/navbar.astro";
 import Footer from "../components/commons/footer/footer.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const { title = "Pol Lleida Ramírez", description = "Portfolio of Pol Lleida Ramírez", image = "/img/og-default.png" } = Astro.props;
 ---
 
 <!doctype html>
@@ -11,7 +19,14 @@ import Footer from "../components/commons/footer/footer.astro";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Pol Lleida Ramírez</title>
+    <title>{title}</title>
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:type" content="website" />
+    <meta name="description" content={description} />
   </head>
   <body class="bg-gray-950 text-white">
     <Navbar />
