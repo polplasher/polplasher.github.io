@@ -34,4 +34,13 @@ export const proyectos = [
     links: ["https://polplasher.itch.io/hold-up"],
     categoria: "unity",
   },
+  {
+    titulo: "SDL Arcade",
+    descripcion: "A collection of classic arcade games built with C++ and SDL. Custom collisions, scene management, custom gameobjects. University second year project.",
+    imagen: "/img/sdl_arcade.jpg",
+    gif: "/gifs/sdl_arcade.gif", 
+    tecnologias: ["C++", "SDL", "SOLID", "GRASP"],
+    roles: ["Gameplay Programmer", "Engine Programmer"],
+    categoria: "C++",
+  },
 ];

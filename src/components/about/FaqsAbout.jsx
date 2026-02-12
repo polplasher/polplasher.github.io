@@ -61,13 +61,13 @@ const SkillsList = () => {
       "I work with Unreal Engine using C++ and Blueprints for gameplay programming, and Unity with C# for scripting game mechanics and interactive systems. I'm experienced in both engines' workflows and toolsets.",
     ],
     "Programming Languages": [
-      "My primary languages are C++ and C#. I use C++ extensively with Unreal Engine for performance-critical gameplay systems, and C# with Unity for rapid prototyping and game logic implementation.",
+      "My primary languages are C++ and C#. I use C++ with Unreal Engine for performance-critical gameplay systems, and C# with Unity for rapid prototyping and game logic implementation.",
     ],
     "My Education": [
       "I'm currently studying Game Development, where I'm learning the fundamentals of game design, programming, and production. My coursework covers gameplay programming, game engine architecture, and interactive media development.",
     ],
     "Teamwork": [
-      "I have experience working in team-based game development projects using agile methodologies. I use Git and GitHub/GitLab for version control, and Jira and Notion for project management and task tracking.",
+      "I thrive in agile/scrum environments where collaboration and iterative development are key. I prioritize creating a positive, supportive atmosphere where team members feel comfortable sharing ideas, asking questions, and giving feedback. I actively work to ensure everyone is heard and has the resources they need to contribute their best work. I use Git/GitHub/GitLab for version control and Jira/Notion for sprint planning and task tracking.",
     ],
     "Tools & Workflow": [
       "I use Visual Studio and JetBrains Rider as my main IDEs. For art and assets, I work with Photoshop for textures and UI, and Aseprite for pixel art and sprite creation. I manage projects with Jira and Notion.",

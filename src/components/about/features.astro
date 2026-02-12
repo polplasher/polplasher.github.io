@@ -7,26 +7,28 @@ import { FaGamepad, FaCode, FaProjectDiagram } from "react-icons/fa";
 	<h2
 		class="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-end"
 	>
-		<span class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"></span>
+		<span
+			class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"
+		></span>
 		<span class="drop-shadow-[2px_2px_0_#7836cf]">Specializations</span>
 	</h2>
 
 	<div class="mt-10 grid gap-6 md:grid-cols-3">
 		<ServiceCard
 			icon={FaGamepad}
-			title="Gameplay Programming"
-			description="Developing game mechanics, player systems, AI behaviors, and interactive gameplay elements using C++ and C#."
+			title="Game Design"
+			description="Iterative design of engaging gameplay mechanics, gamefeel, player systems, and interactive experiences that captivate players and enhance immersion."
+			;
 		/>
-		<ServiceCard
-			icon={FaCode}
-			title="Game Engine Development"
-			description="Working with Unreal Engine and Unity to build performant, polished game experiences from prototype to final product."
-		/>
-
 		<ServiceCard
 			icon={FaProjectDiagram}
 			title="Project Management"
-			description="Using version control with Git, task management with Jira and Notion, and agile workflows for organized game development."
+			description="Producing small team projects, task management with Jira and Notion, and agile workflows for organized game development."
+		/>
+		<ServiceCard
+			icon={FaCode}
+			title="Game Programming"
+			description="Developing game mechanics, player systems, AI behaviors, and interactive gameplay elements using C++ and C#."
 		/>
 	</div>
 </section>
