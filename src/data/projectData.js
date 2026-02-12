@@ -41,6 +41,7 @@ export const proyectos = [
     gif: "/gifs/sdl_arcade.gif", 
     tecnologias: ["C++", "SDL", "SOLID", "GRASP"],
     roles: ["Gameplay Programmer", "Engine Programmer"],
+    links: ["https://github.com/polplasher/SDL_Arcade"],
     categoria: "C++",
   },
 ];
