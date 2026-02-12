@@ -15,14 +15,11 @@ import { proyectos } from "../data/projectData.js";
     <button class="filter-btn cursor-pointer rounded-full bg-[#69c7c7] px-5 py-1.5 text-sm font-bold text-[#1d1250] drop-shadow-[2px_2px_0_#7836cf] transition-all duration-150 active:translate-y-0.5 active:drop-shadow-none" data-filter="all">
       All
     </button>
-    <button class="filter-btn cursor-pointer rounded-full bg-[#69c7c7] px-5 py-1.5 text-sm font-bold text-[#1d1250] drop-shadow-[2px_2px_0_#7836cf] transition-all duration-150 active:translate-y-0.5 active:drop-shadow-none" data-filter="3d">
-      3D Game
+    <button class="filter-btn cursor-pointer rounded-full bg-[#69c7c7] px-5 py-1.5 text-sm font-bold text-[#1d1250] drop-shadow-[2px_2px_0_#7836cf] transition-all duration-150 active:translate-y-0.5 active:drop-shadow-none" data-filter="unreal">
+      Unreal Engine
     </button>
-    <button class="filter-btn cursor-pointer rounded-full bg-[#69c7c7] px-5 py-1.5 text-sm font-bold text-[#1d1250] drop-shadow-[2px_2px_0_#7836cf] transition-all duration-150 active:translate-y-0.5 active:drop-shadow-none" data-filter="2d">
-      2D Game
-    </button>
-    <button class="filter-btn cursor-pointer rounded-full bg-[#69c7c7] px-5 py-1.5 text-sm font-bold text-[#1d1250] drop-shadow-[2px_2px_0_#7836cf] transition-all duration-150 active:translate-y-0.5 active:drop-shadow-none" data-filter="tool">
-      Tool
+    <button class="filter-btn cursor-pointer rounded-full bg-[#69c7c7] px-5 py-1.5 text-sm font-bold text-[#1d1250] drop-shadow-[2px_2px_0_#7836cf] transition-all duration-150 active:translate-y-0.5 active:drop-shadow-none" data-filter="unity">
+      Unity
     </button>
   </div>
 
@@ -40,8 +37,8 @@ import { proyectos } from "../data/projectData.js";
           imagen={proyecto.imagen}
           gif={proyecto.gif}
           tecnologias={proyecto.tecnologias}
-          demo={proyecto.demo}
-          codigo={proyecto.codigo}
+          roles={proyecto.roles}
+          links={proyecto.links}
           categoria={proyecto.categoria}
         />
       ))

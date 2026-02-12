@@ -1,5 +1,8 @@
 ---
-import { HiArrowRight } from "react-icons/hi";
+import { FaGithub, FaYoutube } from "react-icons/fa";
+import { FaItchIo } from "react-icons/fa6";
+import { HiExternalLink } from "react-icons/hi";
+import { detectPlatform } from "../../utils/linkUtils.js";
 
 export interface Props {
   titulo: string;
@@ -7,14 +10,16 @@ export interface Props {
   imagen: string;
   gif?: string;
   tecnologias: string[];
-  demo: string;
-  codigo: string;
+  roles?: string[];
+  links?: string[];
   categoria?: string;
   index: number;
 }
 
-const { titulo, descripcion, imagen, gif, tecnologias, demo, codigo, categoria, index } =
+const { titulo, descripcion, imagen, gif, tecnologias, roles, links, categoria, index } =
   Astro.props;
+
+const parsedLinks = (links || []).map((url) => ({ url, ...detectPlatform(url) }));
 ---
 
 <div
@@ -47,36 +52,32 @@ const { titulo, descripcion, imagen, gif, tecnologias, demo, codigo, categoria, 
           </span>
         ))
       }
+      {
+        roles && roles.map((role) => (
+          <span class="rounded-md bg-[#69c7c7]/20 text-[#69c7c7] px-2 py-0.5 text-xs font-semibold">
+            {role}
+          </span>
+        ))
+      }
     </div>
 
     <p class="flex grow text-gray-400">{descripcion}</p>
 
-    <div class="mt-auto flex justify-between">
-      <a
-        class="group text-primary mt-6 flex items-center justify-start p-0 font-bold text-lg"
-        target="_blank"
-        rel="noopener noreferrer"
-        href={demo}
-      >
-        Demo
-        <HiArrowRight
-          className="ml-1 transition-transform duration-200 group-hover:translate-x-1"
-          size={18}
-        />
-      </a>
-
-      <a
-        class="group text-primary mt-6 flex items-center justify-start p-0 font-bold text-lg"
-        href={codigo}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Code
-        <HiArrowRight
-          className="ml-1 transition-transform duration-200 group-hover:translate-x-1"
-          size={18}
-        />
-      </a>
+    <div class="mt-auto flex flex-wrap gap-4">
+      {parsedLinks.map((link) => (
+        <a
+          class="group text-primary mt-6 flex items-center justify-start p-0 font-bold text-lg"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={link.url}
+        >
+          {link.platform === "itch" && <FaItchIo className="mr-1.5" size={18} />}
+          {link.platform === "github" && <FaGithub className="mr-1.5" size={18} />}
+          {link.platform === "youtube" && <FaYoutube className="mr-1.5" size={18} />}
+          {link.platform === "link" && <HiExternalLink className="mr-1.5" size={18} />}
+          {link.label}
+        </a>
+      ))}
     </div>
   </div>
 </div>

@@ -5,11 +5,10 @@ import CopyMail from "../components/links/copyMail.jsx";
 
 const links = [
   {
-    href: "https://www.linkedin.com/in/pol-lleida-ram%C3%ADrez",
+    href: "https://www.linkedin.com/in/pol-lleida-ramírez",
     label: "LinkedIn",
   },
   { href: "https://github.com/polplasher", label: "GitHub" },
-  { href: "https://polplasher.itch.io/", label: "itch.io" },
   { href: "mailto:pollleida13@gmail.com", label: "Email" },
 ];
 ---
@@ -18,35 +17,25 @@ const links = [
   <section
     class="bg-gray-900 flex min-h-screen flex-col items-center justify-center px-6"
   >
-    <div class="mb-2 mt-11">
-      <div class="mb-2 mt-11">
-        <div class="relative flex items-center justify-center">
-          <img
-            src={MiFoto.src}
-            alt="Photo of Pol"
-            class="border-primary h-32 w-32 rounded-full shadow-lg"
-          />
+    <h1
+      class="text-4xl md:text-5xl font-extrabold text-white mb-6 mt-11 drop-shadow-[3px_3px_0_#7836cf]"
+    >
+      Let's Connect
+    </h1>
 
-          <svg
-            viewBox="0 0 200 200"
-            class="animate-spin-slow absolute h-48 w-48"
-          >
-            <path
-              id="circlePathText"
-              d="M100,100 m-77,0 a77,77 0 1,1 154,0 a77,77 0 1,1 -154,0"
-              fill="none"></path>
-            <text fill="#69c7c7" font-size="18" font-weight="bold">
-              <textPath href="#circlePathText" startOffset="0%">
-                * Hi! * Available for new opportunities!
-              </textPath>
-            </text>
-          </svg>
-        </div>
+    <div class="mb-2">
+      <div class="relative flex items-center justify-center">
+        <img
+          src={MiFoto.src}
+          alt="Photo of Pol"
+          class="border-primary h-32 w-32 rounded-full shadow-lg"
+        />
       </div>
     </div>
 
     <CopyMail client:visible />
 
+    <!-- Lista de Links -->
     <div class="w-full max-w-xl space-y-4">
       {
         links.map((link) => (
@@ -63,15 +52,3 @@ const links = [
     </div>
   </section>
 </Layout>
-
-<style>
-  .animate-spin-slow {
-    animation: spin 25s linear infinite;
-  }
-
-  @keyframes spin {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-</style>
