@@ -2,23 +2,23 @@ export const proyectos = [
   {
     titulo: "Junkonaut",
     descripcion:
-      "A space cleaning incremental game inspired by Outer Wilds. Players navigate through space collecting and clearing debris in an ever-expanding universe.",
+      "A space cleaning incremental game inspired by Outer Wilds. Clean space with your vacuum and grapple gun to feed an ever-growing shredder hole.",
     imagen:
-      "https://i.pinimg.com/736x/8a/c0/47/8ac04761f23a0e0c3e06d5142e94b7c4.jpg",
-    tecnologias: ["Unreal Engine", "C++", "Jira"],
-    demo: "https://polplasher.itch.io/",
-    codigo: "https://github.com/polplasher",
+      "src/assets/img/junkonaut.jpg",
+    gif: "src/assets/gifs/junkonaut.gif",
+    tecnologias: ["Unreal Engine", "C++", "Blueprints", "Jira"],
+    demo: "https://www.youtube.com/watch?v=8UiElKl3i30",
     categoria: "3d",
   },
   {
-    titulo: "Placeholder - 2D Platformer",
+    titulo: "Makinado - 2D roguelike",
     descripcion:
       "A 2D platformer game with tight controls, multiple levels, and pixel art visuals. Built as a learning project to explore 2D game mechanics.",
     imagen:
-      "https://i.pinimg.com/736x/3b/4f/4e/3b4f4e170fcb1795b88f4941f49df0a2.jpg",
-    tecnologias: ["Unity", "C#", "Aseprite"],
-    demo: "#",
-    codigo: "#",
+      "src/assets/img/makinado.jpg",
+    gif: "src/assets/gifs/makinado.gif",
+    tecnologias: ["Unity", "C#", "Jira"],
+    demo: "https://polplasher.itch.io/makinado",
     categoria: "2d",
   },
   {
@@ -27,6 +27,7 @@ export const proyectos = [
       "A first-person shooter prototype featuring basic AI enemies, weapon systems, and level design. Created to practice 3D gameplay programming.",
     imagen:
       "https://i.pinimg.com/736x/10/6e/cd/106ecd1bfe5ed1c3defb83ea0f87a334.jpg",
+    gif: "",
     tecnologias: ["Unreal Engine", "C++", "Blueprints"],
     demo: "#",
     codigo: "#",
@@ -38,6 +39,7 @@ export const proyectos = [
       "A custom editor tool for streamlining game development workflows. Helps automate repetitive tasks in the game production pipeline.",
     imagen:
       "https://i.pinimg.com/736x/a4/85/c4/a485c4da3e78f4f518ddbcdb6637bacf.jpg",
+    gif: "",
     tecnologias: ["C#", "Unity Editor", "Git"],
     demo: "#",
     codigo: "#",

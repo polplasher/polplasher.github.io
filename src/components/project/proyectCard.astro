@@ -5,27 +5,37 @@ export interface Props {
   titulo: string;
   descripcion: string;
   imagen: string;
+  gif?: string;
   tecnologias: string[];
   demo: string;
   codigo: string;
   categoria?: string;
-  index: number; 
+  index: number;
 }
 
-const { titulo, descripcion, imagen, tecnologias, demo, codigo, categoria, index } =
+const { titulo, descripcion, imagen, gif, tecnologias, demo, codigo, categoria, index } =
   Astro.props;
 ---
 
 <div
   data-index={index}
   data-categoria={categoria ?? ""}
-  class="project-card z-10 flex w-[400px] flex-col overflow-hidden rounded-lg bg-gray-900 shadow-lg transition-transform hover:scale-[1.01] lg:w-[320px] drop-shadow-[4px_4px_0_#7836cf]"
+  class="group/card project-card z-10 flex w-[400px] flex-col overflow-hidden rounded-lg bg-gray-900 shadow-lg transition-transform hover:scale-[1.01] lg:w-[320px] drop-shadow-[4px_4px_0_#7836cf]"
 >
-  <img
-    src={imagen}
-    alt={`Project: ${titulo}`}
-    class="h-50 w-full rounded-2xl object-cover p-3"
-  />
+  <div class="relative overflow-hidden">
+    <img
+      src={gif || imagen}
+      alt={`Project: ${titulo}`}
+      class="h-50 w-full rounded-2xl object-cover p-3"
+    />
+    {imagen && gif && (
+      <img
+        src={imagen}
+        alt={`Project: ${titulo}`}
+        class="absolute inset-0 h-full w-full rounded-2xl object-cover p-3 transition-opacity duration-300 group-hover/card:opacity-0"
+      />
+    )}
+  </div>
   <div class="flex grow flex-col px-3 pb-3">
     <h3 class="text-xl font-semibold text-white drop-shadow-[1px_1px_0_#7836cf]">{titulo}</h3>
 
