@@ -1,6 +1,6 @@
 ---
 import ServiceCard from "./ServiceCard.astro";
-import { FaLaptopCode, FaBolt, FaRocket } from "react-icons/fa"; 
+import { FaGamepad, FaCode, FaProjectDiagram } from "react-icons/fa";
 ---
 
 <section class="site-container mt-14 mx-auto max-w-6xl px-4">
@@ -8,25 +8,25 @@ import { FaLaptopCode, FaBolt, FaRocket } from "react-icons/fa";
 		class="text-4xl font-bold flex flex-col items-center gap-6 text-center whitespace-nowrap text-white md:flex-row md:items-center md:text-end"
 	>
 		<span class="hidden h-1.5 grow rounded-lg drop-shadow-[2px_2px_0_#0debd8] bg-[#7836cf] md:block"></span>
-		<span class="drop-shadow-[2px_2px_0_#7836cf]">Servicios</span>
+		<span class="drop-shadow-[2px_2px_0_#7836cf]">Specializations</span>
 	</h2>
 
 	<div class="mt-10 grid gap-6 md:grid-cols-3">
 		<ServiceCard
-			icon={FaLaptopCode}
-			title="Desarrollo Web Responsivo"
-			description="Construcción de sitios web modernos, adaptados a dispositivos móviles, optimizados y con tecnologías actuales."
+			icon={FaGamepad}
+			title="Gameplay Programming"
+			description="Developing game mechanics, player systems, AI behaviors, and interactive gameplay elements using C++ and C#."
 		/>
 		<ServiceCard
-			icon={FaBolt}
-			title="Frontend"
-			description="Desarrollo de interfaces modernas, rápidas y accesibles que ofrecen una experiencia de usuario intuitiva y atractiva."
+			icon={FaCode}
+			title="Game Engine Development"
+			description="Working with Unreal Engine and Unity to build performant, polished game experiences from prototype to final product."
 		/>
 
 		<ServiceCard
-			icon={FaRocket}
-			title="Backend"
-			description="Rendimiento rápido, mejores prácticas de accesibilidad y optimización de procesos en el servidor."
+			icon={FaProjectDiagram}
+			title="Project Management"
+			description="Using version control with Git, task management with Jira and Notion, and agile workflows for organized game development."
 		/>
 	</div>
 </section>

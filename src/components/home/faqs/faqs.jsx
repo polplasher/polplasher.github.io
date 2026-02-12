@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 
 const CategoryIcons = {
-  "Web Development": (
+  "Game Engines": (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="text-primary h-6 w-6 opacity-70"
+    >
+      <path d="M17 4C20.3137 4 23 6.68629 23 10V14C23 17.3137 20.3137 20 17 20H7C3.68629 20 1 17.3137 1 14V10C1 6.68629 3.68629 4 7 4H17ZM10 9H8V11H6V13H7.999L8 15H10L9.999 13H12V11H10V9ZM16 13H14V15H16V13ZM18 9H16V11H18V9Z"></path>
+    </svg>
+  ),
+  "Programming": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -11,17 +21,7 @@ const CategoryIcons = {
       <path d="M21 3C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21ZM20 11H4V19H20V11ZM20 5H4V9H20V5ZM11 6V8H9V6H11ZM7 6V8H5V6H7Z"></path>
     </svg>
   ),
-  "Mobile Development": (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="text-primary h-6 w-6 opacity-70"
-    >
-      <path d="M7 4V20H17V4H7ZM6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C12.5523 17 13 17.4477 13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17Z"></path>
-    </svg>
-  ),
-  "UI/UX Design & Prototyping": (
+  "Tools & Workflow": (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -37,20 +37,14 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState(null);
 
   const skills = {
-    "¿Qué tecnologías uso?": [
-      "Actualmente trabajo con tecnologías como React, Next.js, Vue.js, Astro, tailwind, Boostrap y demas librerias y frameworks para el frontend y en el backend trabajo con Node.js, Express, MongoDB, Firebase, entre otras.",
+    "Game Engines": [
+      "I work with both Unreal Engine and Unity. In Unreal, I use C++ and Blueprints for gameplay programming. In Unity, I develop with C# for scripting game mechanics, AI, and interactive systems.",
     ],
-    "Mi Experiencia": [
-      "Tengo experiencia trabajando en startups y consultoras tecnológicas, desarrollando y maquetando sitios web a partir de diseños en Figma. Para ello, utilizo tecnologías frontend como Astro y React, junto con Tailwind CSS y otras librerías y frameworks para el estilizado y la optimización de interfaces.",
+    "Programming": [
+      "My primary languages are C++ and C#, which I use for game development. I'm comfortable with object-oriented programming, design patterns, and the specific paradigms used in game engines like actor models and component systems.",
     ],
-    "Mi formacion": [
-      "Estudié una tecnicatura en automatización de grado universitaria en el ITU, lo que me brindó las bases en programación. Posteriormente, decidí enfocarme en el desarrollo web y de software. Ademas, realicé diversos cursos, diplomados y capacitaciones en grandes universidades Argentinas, como la UTN, tambien, complemento mi formación con el aprendizaje autodidacta, lo que me permite mantenerme actualizado con los avances tecnológicos en el desarrollo de software.",
-    ],
-    "¿Cómo trabajo en equipo?": [
-      "Tengo experiencia trabajando en equipos multidisciplinarios, donde me he encargado del desarrollo frontend de aplicaciones web. Para ello, utilizo metodologías ágiles como Scrum y Kanban, además de herramientas de control de versiones como Git y GitHub para gestionar el flujo de trabajo. También cuento con experiencia en el uso de herramientas de gestión de proyectos como Trello y Jira, facilitando la organización y colaboración dentro del equipo.",
-    ],
-    "Metodolgias Agiles": [
-      "He trabajado con metodologías ágiles como Scrum y Kanban. En Scrum, participé en sprints de dos semanas, donde al finalizar cada sprint realizaba un pull request (PR) con mi trabajo, el cual pasaba por una fase de revisión y corrección antes de ser fusionado y enviado a producción. También he trabajado con Kanban, utilizando tableros para gestionar tareas y moverlas según su estado de progreso. Además, participé en reuniones diarias (dailies) para planificar y reportar avances del proyecto, asegurando una comunicación eficiente dentro del equipo.",
+    "Tools & Workflow": [
+      "I use Visual Studio and JetBrains Rider as my main IDEs. For project management, I work with Jira and Notion. I use Git with GitHub and GitLab for version control. For art and assets, I work with Photoshop and Aseprite for pixel art and sprite creation.",
     ],
   };
 
@@ -62,7 +56,7 @@ const SkillsList = () => {
     <div className="flex flex-col items-center px-4 text-left">
       <div className="mx-auto w-full max-w-4xl">
         <h2 className="text-white text-center text-4xl font-bold drop-shadow-[2px_2px_0_#7836cf]">
-          Sobre mí y mi trabajo
+          About Me & My Work
         </h2>
         <ul className="mt-8 space-y-4 text-lg drop-shadow-[2px_2px_0_#7836cf]">
           {Object.entries(skills).map(([category, items]) => (

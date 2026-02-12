@@ -5,12 +5,12 @@ import CopyMail from "../components/links/copyMail.jsx";
 
 const links = [
   {
-    href: "https://www.linkedin.com/in/lautaro-rodr%C3%ADguez-collins-40505624a/",
+    href: "https://www.linkedin.com/in/pol-lleida-ram%C3%ADrez",
     label: "LinkedIn",
   },
-  { href: "https://github.com/Lautaro-R-collins", label: "GitHub" },
-  { href: "https://x.com/lautarodevelops/", label: "Twitter" },
-  { href: "mailto:lautarodevelops@gmail.com", label: "Email" },
+  { href: "https://github.com/polplasher", label: "GitHub" },
+  { href: "https://polplasher.itch.io/", label: "itch.io" },
+  { href: "mailto:pollleida13@gmail.com", label: "Email" },
 ];
 ---
 
@@ -21,14 +21,12 @@ const links = [
     <div class="mb-2 mt-11">
       <div class="mb-2 mt-11">
         <div class="relative flex items-center justify-center">
-          <!-- Foto con borde -->
           <img
             src={MiFoto.src}
-            alt="Foto de Lautaro"
+            alt="Photo of Pol"
             class="border-primary h-32 w-32 rounded-full shadow-lg"
           />
 
-          <!-- Texto circular alrededor de la foto -->
           <svg
             viewBox="0 0 200 200"
             class="animate-spin-slow absolute h-48 w-48"
@@ -39,7 +37,7 @@ const links = [
               fill="none"></path>
             <text fill="#69c7c7" font-size="18" font-weight="bold">
               <textPath href="#circlePathText" startOffset="0%">
-                ✦ Hola ! ✦ Estoy disponible para nuevas oportunidades!
+                * Hi! * Available for new opportunities!
               </textPath>
             </text>
           </svg>
@@ -49,7 +47,6 @@ const links = [
 
     <CopyMail client:visible />
 
-    <!-- Lista de Links -->
     <div class="w-full max-w-xl space-y-4">
       {
         links.map((link) => (

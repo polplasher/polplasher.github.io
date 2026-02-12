@@ -1,37 +1,18 @@
-import urbanStyle from "../assets/img-projects/urbanStyle.png";
-import imgNote from "../assets/img-projects/note-app.png";
-import ReactEcommerce from "../assets/img-projects/ecommers.jpg";
-import VintageTone from "../assets/img-projects/vintageToneApp.jpg";
-
 export const proyectos = [
-    {
-    titulo: "Vintage Tone",
-    imagen: VintageTone.src,
-    tecnologias: ["Vue.js", "Tailwind", "Express", "MongoDB"],
-    demo: "https://vintage-tone-front-vue.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/VintageTone-Front-Vue.git",
-    categoria: "fullstack",
+  {
+    titulo: "Junkonaut",
+    imagen:
+      "https://i.pinimg.com/736x/8a/c0/47/8ac04761f23a0e0c3e06d5142e94b7c4.jpg",
+    tecnologias: ["Unreal Engine", "C++", "Jira"],
+    demo: "https://polplasher.itch.io/",
+    codigo: "https://github.com/polplasher",
   },
   {
-    titulo: "React Tiendita",
-    imagen: ReactEcommerce.src,
-    tecnologias: ["React", "Tailwind", "Node.js" ,"Express", "MongoDB", "jwt"],
-    demo: "https://react-e-commerce-three-phi.vercel.app",
-    codigo: "https://github.com/Lautaro-R-collins/React-E-commerce.git",
-  },
-  {
-    titulo: "E-commerce Urban Style",
-    descripcion: "Descripción breve del proyecto 1.",
-    imagen: urbanStyle.src,
-    tecnologias: ["React", "Tailwind", "Firebase"],
-    demo: "https://proyecto-final-rodriguez-sable.vercel.app/",
-    codigo: "https://github.com/Lautaro-R-collins/ProyectoFinal-Rodriguez.git",
-  },
-  {
-    titulo: "API REST para Ecommerce",
-    imagen: "https://miro.medium.com/1*47S4iWVwTicFkFL4-Z4uAA.png",
-    tecnologias: ["Express", "Node.js", "MongoDB", "Mongoose"],
-    demo: "https://react-e-commerce-three-phi.vercel.app/",
-    codigo: "https://github.com/Lautaro-R-collins/ApiRest-Ecommerce.git",
+    titulo: "Placeholder - 2D Platformer",
+    imagen:
+      "https://i.pinimg.com/736x/3b/4f/4e/3b4f4e170fcb1795b88f4941f49df0a2.jpg",
+    tecnologias: ["Unity", "C#", "Aseprite"],
+    demo: "#",
+    codigo: "#",
   },
 ];
