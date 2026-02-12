@@ -11,10 +11,11 @@ export interface Props {
   gif?: string;
   tecnologias: string[];
   roles?: string[];
+  awards?: string[];
   links?: string[];
 }
 
-const { titulo, descripcion, imagen, gif, tecnologias, roles, links } = Astro.props;
+const { titulo, descripcion, imagen, gif, tecnologias, roles, awards, links } = Astro.props;
 
 const parsedLinks = (links || []).map((url) => ({ url, ...detectPlatform(url) }));
 ---
@@ -52,6 +53,13 @@ const parsedLinks = (links || []).map((url) => ({ url, ...detectPlatform(url) })
         roles && roles.map((role) => (
           <span class="rounded-md bg-[#69c7c7]/20 text-[#69c7c7] px-2 py-0.5 text-xs font-semibold">
             {role}
+          </span>
+        ))
+      }
+      {
+        awards && awards.map((award) => (
+          <span class="rounded-md bg-yellow-500/20 text-yellow-400 px-2 py-0.5 text-xs font-semibold">
+            🏆 {award}
           </span>
         ))
       }
