@@ -38,7 +38,7 @@ const parsedLinks = (links || []).map((url) => ({ url, ...detectPlatform(url) })
       <img
         src={imagen}
         alt={`Project: ${titulo}`}
-        class="absolute inset-0 h-full w-full rounded-2xl object-cover p-3 transition-opacity duration-300 group-hover/card:opacity-0"
+        class="gif-preview absolute inset-0 h-full w-full rounded-2xl object-cover p-3 transition-opacity duration-300 group-hover/card:opacity-0"
       />
     )}
   </div>
@@ -89,3 +89,7 @@ const parsedLinks = (links || []).map((url) => ({ url, ...detectPlatform(url) })
     </div>
   </div>
 </div>
+
+<script>
+  import "../../scripts/gifMobile.js";
+</script>
