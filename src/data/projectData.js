@@ -7,7 +7,7 @@ export const proyectos = [
     gif: "/gifs/junkonaut.gif",
     tecnologias: ["Unreal Engine", "C++", "Blueprints", "Jira"],
     roles: ["Gameplay Programmer", "Game Designer", "Producer"],
-    links: ["https://www.youtube.com/watch?v=8UiElKl3i30"],
+    links: ["https://youtu.be/4IShfHaeOeQ"],
     categoria: "unreal",
     featured: true,
   },
